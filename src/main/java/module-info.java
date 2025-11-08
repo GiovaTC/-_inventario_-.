@@ -8,5 +8,10 @@ module com.inventario.inventario {
     requires org.kordamp.bootstrapfx.core;
 
     opens com.inventario.inventario to javafx.fxml;
-    exports com.inventario.inventario;
+    exports com.inventario.inventario.ui;
+    opens com.inventario.inventario.ui to javafx.fxml;
+    exports com.inventario.inventario.model;
+    opens com.inventario.inventario.model to javafx.fxml;
+    exports com.inventario.inventario.db;
+    opens com.inventario.inventario.db to javafx.fxml;
 }
